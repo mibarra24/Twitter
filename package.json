@@ -1,0 +1,24 @@
+{
+  "name": "twitter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/jest/bin/jest",
+    "text_exp": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mibarra24/Twitter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mibarra24/Twitter/issues"
+  },
+  "homepage": "https://github.com/mibarra24/Twitter#readme",
+  "devDependencies": {
+    "jest": "^28.0.3"
+  }
+}
