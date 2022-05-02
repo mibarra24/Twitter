@@ -12,6 +12,7 @@ describe("Unit Test for User class", () => {
         expect(user.username).toBe("paralink")
         expect(user.name).toBe("Marco")
         expect(user.bio).toBe("Bio")
-        
+        expect(user.dateCreated).toBe("dateCreated")
+        expect(user.lastUpdated).toBe("lastUpdated")
     })
 })
