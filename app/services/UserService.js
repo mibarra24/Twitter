@@ -24,4 +24,4 @@ class UserService {
 
 }
 
-module.exports = UserServicenpm
+module.exports = UserService
