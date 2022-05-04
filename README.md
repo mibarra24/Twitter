@@ -25,4 +25,29 @@ Cuarto requerimiento:
  - Se añaden los setters: `setUsername` y `setBio`, para actualizar dichas propiedades al agrega los setters usando la palabra `set` y modificando el atributo indicado.
 
 
+# 4. Sprint 2: Agregar servicios 🛍️
+
+Primer requerimeinto:Se crea un usaurio con lo ya definido en el sprint anterior, usando una nueva clase que se llama `UserService`.
+ 
+Criterios de aceptación:
+1. Esta clase deberá tener un método `create` que se pueda usar sin instanciar (static method), y que reciba solo los parámetros del `id`, `username` y `name`. 
+2. El valor de `bio` deberá ser por default para todos los `user` creados.
+
+Segundo requerimiento: se añade un nuevo método estático en `UserService` llamado `getInfo` que al recibir un objeto de la clase `User`, regrese una lista con todos los valores de los atributos de dicho objeto.
+
+Tercer requerimiento: se agrega un nuevo método estático en `UserService` llamado `updateUserUsername`, que reciba un objeto de la clase `User` y un nuevo string, que actualizará el valor de `username`. 
+
+Cuarto requerimiento: se agrega un nuevo método estático en `UserService` llamado `getAllUsernames`, que recibirá una lista de objetos de la clase `User`, y regresará la lista de todos los usernames de dichos objetos. 
+
+# 5. Sprint 3: Agregar vistas 🌠
+
+Se crea la clase `UserView`, misma que funciona para interactuar con el modelo `User` a través de `userService`. Al mismo tiempo, se crea una clase dentro de este ultimo llamado `create User`, la cual sirve para crear un nuevo objeto user a partir de un `payload`, que es un objeto que contiene info para crearlo.
+
+Requerimientos: 📔
+1. Valida que al enviar en el `payload` un valor `null`, obtenga un objeto con la llave `error` y el valor indique `payload no existe`.
+2. Valida que un `payload` contenga en alguna de las llaves `username`, `name`, o `id` un valor en `null`. Si hay un valor `null` regresa un objeto con la llave `error` y que indique el texto: `necesitan tener un valor válido`.
+3. Valida que un `payload` con algunas de las propiedades necesarias regrese un objeto con la llave `error` indicando `necesitan tener un valor válido`.
+4. Verifica que se pueda crear un objeto `User`, al enviar un payload con las siguientes propiedades: `username`, `id` y `name`.
+
+
 
